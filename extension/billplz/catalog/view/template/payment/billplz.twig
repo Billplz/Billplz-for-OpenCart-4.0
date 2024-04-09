@@ -1,0 +1,11 @@
+{% if (is_sandbox) %}
+    <div class="alert alert-warning"><i class="fa fa-exclamation-circle"></i> {{ text_is_sandbox }}</div>
+{% endif %}
+
+<form action="{{ action }}" method="post">
+    <div class="buttons">
+        <div class="pull-right">
+            <input type="submit" class="btn btn-primary" value="{{ button_confirm }}" />
+        </div>
+    </div>
+</form>
