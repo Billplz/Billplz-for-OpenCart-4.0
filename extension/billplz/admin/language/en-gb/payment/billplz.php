@@ -11,9 +11,9 @@ $_['text_success']           = 'Success: You have modified Billplz!';
 $_['text_edit']              = 'Edit Billplz';
 
 // Settings
-$_['text_api_key']           = 'Billplz API Secret Key';
-$_['text_x_signature']       = 'Billplz XSignature Key';
-$_['text_collection_id']     = 'Billplz Collection ID';
+$_['text_api_key']           = 'API Secret Key';
+$_['text_x_signature']       = 'XSignature Key';
+$_['text_collection_id']     = 'Collection ID';
 $_['text_is_sandbox']        = 'Sandbox Mode';
 
 // Entry
