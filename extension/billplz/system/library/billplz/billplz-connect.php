@@ -9,7 +9,7 @@ class BillplzConnect
     private $collection_id;
 
     private $process;
-    public $is_production;
+    public $is_staging;
     public $url;
     public $webhook_rank;
 
