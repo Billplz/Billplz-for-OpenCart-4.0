@@ -147,7 +147,7 @@ class Billplz extends Controller
         try {
             $data = BillplzConnect::getXSignature($this->config->get('payment_billplz_x_signature'));
         } catch (\Exception $e) {
-            $this->model_extension_billplz_payment_billplz->logger('XSignature redirect error: ' . $e->getMessage(), $_REQUEST);
+            $this->model_extension_billplz_payment_billplz->logger('XSignature redirect error: ' . $e->getMessage(), (array) $_REQUEST);
             exit($e->getMessage());
         }
 
@@ -171,7 +171,7 @@ class Billplz extends Controller
         try {
            $data = BillplzConnect::getXSignature($this->config->get('payment_billplz_x_signature'));
         } catch (\Exception $e) {
-            $this->model_extension_billplz_payment_billplz->logger('XSignature callback error: ' . $e->getMessage(), $_REQUEST);
+            $this->model_extension_billplz_payment_billplz->logger('XSignature callback error: ' . $e->getMessage(), (array) $_REQUEST);
             exit($e->getMessage());
         }
 
